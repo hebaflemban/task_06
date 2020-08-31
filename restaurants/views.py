@@ -27,6 +27,7 @@ def restaurant_create(request):
         return redirect('restaurant-list')
     context = {
         'form' : new_restaurant
+        #var used in html
 
     }
     return render(request, 'create.html', context)
